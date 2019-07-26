@@ -1,0 +1,108 @@
+.page-template-template-contactus-page {
+  .top-nav {
+    &__collapse {
+      ul {
+        li {
+          a {
+            color: $c-font-main;
+          }
+        }
+      }
+    }
+  }
+  #menuSpan span {
+    background-color: $c-brand-d-blue;
+  }
+  .main__corner {
+    display: none;
+  }
+}
+
+.headline {
+  &__contact {
+    background-color: $c-brand-white;
+    #top-corner {
+      fill: $c-brand-green;
+    }
+    #topLogo {
+      .first-path-logo {
+        fill: $c-brand-white;
+      }
+      .second-path-logo {
+        fill: $c-brand-d-blue;
+      }
+    }
+    .headline__text {
+      min-height: 800px;
+      padding-left: 115px;
+      position: relative;
+      @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+        padding-left: 25px;
+      }
+      @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+        padding-bottom: 30px;
+      }
+      @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+        justify-content: flex-end;
+        padding-left: 25px;
+      }
+      &_title {
+        @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+          margin-bottom: 30px;
+        }
+        h1 {
+          color: $c-font-main;
+        }
+      }
+      &_content {
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          margin-bottom: 40px;
+          br {
+            display: none;
+          }
+        }
+        p {
+          color: $c-font-main;
+        }
+      }
+    }
+    &_address {
+      p {
+        font-family: $f-freight-r;
+        font-size: $fs-md;
+        line-height: 42px;
+      }
+    }
+  }
+}
+
+.contact {
+  &__image {
+    position: absolute;
+    top: 200px;
+    right: calc((100% - #{$w-container-b}) / 2);
+    width: 550px;
+    z-index: 9999;
+    @media screen and(max-width: map_get($grid-breakpoints, 'fhd')) {
+      right: 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &_desktop {
+      @media screen and(max-width: map_get($grid-breakpoints, 'lg')) {
+        display: none;
+      }
+    }
+    &_mobile {
+      display: none;
+      @media screen and(max-width: map_get($grid-breakpoints, 'lg')) {
+        display: block;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

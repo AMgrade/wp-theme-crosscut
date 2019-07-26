@@ -1,0 +1,49 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        lg-t: 1024px,
+        xl: 1140px,
+        hd: 1370px,
+        fhd: 1400px,
+        fhdx: 1600px
+) !default;
+
+// fonts
+$f-freight-m: "FreightTextMedium", helvetica, arial, sans-serif;
+$f-freight-m-i: "FreightTextMediumItalic", helvetica, arial, sans-serif;
+$f-freight-r: "FreightTextBook", helvetica, arial, sans-serif;
+$f-interstate-b: "Interstate Bold", helvetica, arial, sans-serif;
+$f-interstate-l: "Interstate Light", helvetica, arial, sans-serif;
+
+//font-sizes
+$fs-xl: 96px;
+$fs-lg: 60px;
+$fs-lg-team: 40px;
+$fs-lg-partners: 40px;
+$fs-md: 24px;
+$fs-md-footer: 20px;
+$fs-sm: 18px;
+$fs-sm-s: 16px;
+$fs-xs-footer: 14px;
+$fs-xs: 12px;
+
+$fs-mb: 46px;
+
+//colors
+$c-font-grey-white: #FBF9F0;
+$c-font-white: #FFFFFF;
+$c-font-menu: #FFFFFF;
+$c-font-main: #222A33;
+$c-font-green: #3C6239;
+
+$c-brand-white: #FFFFFF;
+$c-brand-green: #376B33;
+$c-brand-l-blue: #F0F7FA;
+$c-brand-blue: #B5D7E8;
+$c-brand-d-blue: #222A33;
+
+//width
+$w-container-b: 1370px;
+$w-container: 1140px;

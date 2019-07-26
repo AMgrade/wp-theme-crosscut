@@ -1,0 +1,28 @@
+/**
+Variables
+ */
+@import "variables";
+/**
+Mixins
+ */
+@import "mixins";
+/**
+Fonts
+ */
+@import 'fonts';
+/**
+General styles
+ */
+@import "main";
+@import "components/btn";
+@import "components/headline";
+@import "header/header";
+@import "header/humburger";
+@import "footer/footer";
+@import "pages/home";
+@import "pages/about-us";
+@import "pages/post";
+@import "pages/news";
+@import "pages/contact-us";
+@import "pages/team";
+@import "pages/portfolio";

@@ -1,0 +1,21 @@
+.cross-btn {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 230px;
+  font-family: $f-interstate-b;
+  font-size: $fs-sm-s;
+  color: $c-font-white;
+  background-color: $c-brand-green;
+  box-shadow: none !important;
+  border: none !important;
+  cursor: pointer;
+  &:focus, &:hover, &:active {
+    box-shadow: none !important;
+    border: none;
+    color: $c-font-main !important;
+    background-color: $c-brand-blue;
+  }
+}

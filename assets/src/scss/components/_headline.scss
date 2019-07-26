@@ -1,0 +1,173 @@
+.headline {
+  background-color: $c-brand-d-blue;
+  overflow: hidden;
+
+  &__image {
+    position: relative;
+  }
+
+  &__image_wrap {
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    @media screen and(max-width: map_get($grid-breakpoints, 'fhdx')) {
+      width: 80%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+        opacity: 1;
+      }
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+      width: 100%;
+    }
+  }
+
+  &__bg {
+    background-color: $c-brand-d-blue;
+    position: absolute;
+    height: 100%;
+    width: 57%;
+    top: 0;
+    z-index: 15;
+    transform: skewX(-45deg);
+    @media screen and(max-width: map_get($grid-breakpoints, 'fhdx')) {
+      width: 75%;
+      left: -20%;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'lg')) {
+      width: 70%;
+      left: -30%;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+      display: none;
+    }
+  }
+
+  &__logo-corner {
+    position: absolute;
+    width: 940px;
+    height: 940px;
+    z-index: 999;
+    left: -470px;
+    top: -545px;
+    a {
+      position: absolute;
+      display: block;
+      width: 132px;
+      height: 25px;
+      right: 113px;
+      bottom: 306px;
+      cursor: pointer;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'fhdx')) {
+      left: -565px;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'fhd')) {
+      left: -645px;
+    }
+  }
+
+  &__mobile-corner {
+    display: none;
+    @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+      display: block;
+      position: absolute;
+      transform: rotate(45deg);
+      background-color: $c-brand-white;
+      z-index: 10;
+      width: 20vw;
+      height: 20vw;
+      bottom: -10vw;
+      right: -10vw;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 200;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    @media screen and(max-width: map_get($grid-breakpoints, 'hd')) {
+      padding-left: 150px;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'lg')) {
+      padding-left: 25px;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+      padding-bottom: 0;
+      padding-left: 35px;
+      @include  flex(column,center,flex-start)
+    }
+    &_title {
+      margin-bottom: 30px;
+      @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+        //margin-bottom: 80px;
+      }
+      h1 {
+        //font-family: $f-freight-r;
+        font-size: $fs-xl;
+        color: $c-font-white;
+        @media screen and(max-width: map_get($grid-breakpoints, 'lg')) {
+          font-size: $fs-lg;
+        }
+        @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+          font-size: $fs-mb;
+        }
+      }
+    }
+    &_content {
+      max-width: 540px;
+      width: 100%;
+      margin-bottom: 30px;
+      @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+        margin-bottom: 60px;
+      }
+      p {
+        font-family: $f-interstate-l;
+        font-size: $fs-sm;
+        color: $c-font-white;
+        line-height: 36px;
+        @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+          line-height: 24px;
+        }
+      }
+    }
+    &_button {
+      a {
+        background-color: $c-brand-blue;
+        color: $c-font-main;
+        &:hover {
+          color: $c-font-white !important;
+          background-color: $c-brand-green !important;
+        }
+      }
+    }
+  }
+  &__news {
+    background-color: transparent;
+  }
+}

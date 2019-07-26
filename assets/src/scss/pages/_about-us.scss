@@ -1,0 +1,196 @@
+.page-template-template-aboutus-page {
+  .current-menu-item {
+    a {
+      color: $c-font-green;
+    }
+  }
+  .main {
+    &__corner {
+      @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+        display: none;
+      }
+    }
+  }
+}
+
+.headline__about {
+  background-color: $c-brand-d-blue;
+  #top-corner {
+    fill: $c-brand-white;
+  }
+  .headline__bg {
+    background-color: $c-brand-d-blue;
+  }
+  .headline__image_wrap {
+    .overlay {
+      background-color: rgba(55, 107, 51, 0.5);
+    }
+  }
+  .headline__text {
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    padding-left: 75px;
+    @media screen and(max-width: map_get($grid-breakpoints, 'fhd')) {
+      padding-left: 25px;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+      &_title {
+        h1 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+.section {
+  &__image {
+    position: absolute;
+    top: 920px;
+    right: 0;
+    width: 550px;
+    height: auto;
+    @media screen and(max-width: map_get($grid-breakpoints, 'fhd')) {
+      width: 350px;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__about {
+    padding: 120px 25px 230px;
+    position: relative;
+    @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+      padding: 50px 25px 60px;
+    }
+    #accordionAbout {
+      max-width: 785px;
+      width: 100%;
+      margin-right: auto;
+      @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+        max-width: 100%;
+      }
+    }
+  }
+  .about__card {
+    border: 0;
+    background-color: transparent;
+    margin-bottom: 10px;
+    &_header {
+      @include flex(row, flex-start, flex-end);
+      border-radius: 0;
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      margin-bottom: 0 !important;
+      border-bottom: 1px solid rgba(34, 42, 51, 0.2);
+      .num {
+        margin-right: 100px;
+        margin-bottom: 5px;
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          margin-right: 30px;
+        }
+        span {
+          font-family: $f-interstate-b;
+          font-size: $fs-md-footer;
+          opacity: 0.2;
+          @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+            font-size: $fs-xs-footer;
+          }
+        }
+      }
+      .title {
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          margin-bottom: 15px;
+        }
+        h2 {
+          font-size: $fs-lg-team;
+          @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+            font-size: $fs-md;
+          }
+        }
+      }
+    }
+    &_subheader {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      & > div {
+        position: relative;
+      }
+      p {
+        font-size: $fs-md;
+        line-height: 42px;
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          font-size: $fs-md-footer;
+          line-height: 34px;
+        }
+      }
+      .line {
+        position: absolute;
+        left: 0;
+        top: 29px;
+        display: block;
+        height: 1px;
+        background-color: rgba(34, 42, 51, 0.2);
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          display: none;
+        }
+      }
+      .info__btn {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        color: $c-font-green;
+        font-family: $f-interstate-b;
+        font-size: $fs-xs;
+        padding: 20px 30px 0 0;
+        &:after {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 10px;
+          background-image: url("/wp-content/themes/crosscut/assets/img/about/arrow-down.svg");
+          background-size: cover;
+          transform: rotateZ(0);
+          transition: all 0.4s ease;
+          position: absolute;
+          top: 25px;
+          right: 0;
+        }
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          width: 100%;
+          margin: 0;
+          text-align: left;
+        }
+      }
+      .rotate {
+        &:after {
+          transform: rotateZ(180deg);
+        }
+        transition: all 0.4s ease;
+      }
+    }
+    &_body {
+      padding: 0;
+      p {
+        font-family: $f-interstate-l;
+        font-size: $fs-md;
+        line-height: 42px;
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          font-size: $fs-md-footer;
+          line-height: 34px;
+        }
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

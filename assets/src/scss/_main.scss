@@ -1,0 +1,133 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: $f-freight-m;
+  background-color: $c-brand-white;
+  color: $c-font-main;
+  line-height: normal;
+  position: relative;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+  &:hover {
+    text-decoration: none;
+    color: $c-font-green !important;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+input,textarea {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  &:focus, &:hover {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+.container-width {
+  max-width: $w-container;
+  width: 100%;
+  margin: 0 auto;
+  @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.b-container-width {
+  max-width: $w-container-b;
+  width: 100%;
+  margin: 0 auto;
+  @media screen and(max-width: map_get($grid-breakpoints, 'hd')) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.page-line {
+  width: 40px;
+  padding: 0 17px;
+  background-color: transparent;
+  height: 100%;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  z-index: 200;
+  @media screen and(max-width: map_get($grid-breakpoints, 'fhd')) {
+    right: 30px;
+  }
+  @media screen and(max-width: map_get($grid-breakpoints, 'lg-t')) {
+    display: none;
+  }
+  &__inside {
+    width: 100%;
+    height: 100%;
+    background-color: $c-brand-d-blue;
+  }
+  &__header {
+    height: 100%;
+    background-color: $c-brand-white;
+  }
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+  @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+    margin-bottom: 30px;
+  }
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+  &__corner {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    bottom: -30vw;
+    right: -30vw;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: $c-brand-blue;
+  }
+}
+
+.color {
+  &__d-blue {
+    color: $c-brand-d-blue !important;
+  }
+}

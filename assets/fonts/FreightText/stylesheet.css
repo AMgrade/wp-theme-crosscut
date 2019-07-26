@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Freight';
+    src: url('Freight-TextMedium.eot');
+    src: url('Freight-TextMedium.eot?#iefix') format('embedded-opentype'),
+        url('Freight-TextMedium.woff2') format('woff2'),
+        url('Freight-TextMedium.woff') format('woff'),
+        url('Freight-TextMedium.ttf') format('truetype'),
+        url('Freight-TextMedium.svg#Freight-TextMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Freight';
+    src: url('Freight-TextMediumItalic.eot');
+    src: url('Freight-TextMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Freight-TextMediumItalic.woff2') format('woff2'),
+        url('Freight-TextMediumItalic.woff') format('woff'),
+        url('Freight-TextMediumItalic.ttf') format('truetype'),
+        url('Freight-TextMediumItalic.svg#Freight-TextMediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Freight';
+    src: url('Freight-TextBook.eot');
+    src: url('Freight-TextBook.eot?#iefix') format('embedded-opentype'),
+        url('Freight-TextBook.woff2') format('woff2'),
+        url('Freight-TextBook.woff') format('woff'),
+        url('Freight-TextBook.ttf') format('truetype'),
+        url('Freight-TextBook.svg#Freight-TextBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

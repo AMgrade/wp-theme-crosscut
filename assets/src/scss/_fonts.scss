@@ -1,0 +1,300 @@
+/*@font-face {
+  font-family: 'FreightTextMedium';
+  src: url('../../fonts/FreightText/Freight-TextMedium.eot');
+  src: url('../../fonts/FreightText/Freight-TextMedium.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightText/Freight-TextMedium.woff2') format('woff2'),
+  url('../../fonts/FreightText/Freight-TextMedium.woff') format('woff'),
+  url('../../fonts/FreightText/Freight-TextMedium.ttf') format('truetype'),
+  url('../../fonts/FreightText/Freight-TextMedium.svg#Freight-TextMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextMediumItalic';
+  src: url('../../fonts/FreightText/Freight-TextMediumItalic.eot');
+  src: url('../../fonts/FreightText/Freight-TextMediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightText/Freight-TextMediumItalic.woff2') format('woff2'),
+  url('../../fonts/FreightText/Freight-TextMediumItalic.woff') format('woff'),
+  url('../../fonts/FreightText/Freight-TextMediumItalic.ttf') format('truetype'),
+  url('../../fonts/FreightText/Freight-TextMediumItalic.svg#Freight-TextMediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextBook';
+  src: url('../../fonts/FreightText/Freight-TextBook.eot');
+  src: url('../../fonts/FreightText/Freight-TextBook.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightText/Freight-TextBook.woff2') format('woff2'),
+  url('../../fonts/FreightText/Freight-TextBook.woff') format('woff'),
+  url('../../fonts/FreightText/Freight-TextBook.ttf') format('truetype'),
+  url('../../fonts/FreightText/Freight-TextBook.svg#Freight-TextBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'FreightTextBook';
+  src: url('../../fonts/FreightTextNew/FreightTextBook.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBook.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBook.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBook.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBook.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBook.svg#FreightTextBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextBlack';
+  src: url('../../fonts/FreightTextNew/FreightTextBlack.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBlack.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBlack.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBlack.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBlack.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBlack.svg#FreightTextBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextBlackSC';
+  src: url('../../fonts/FreightTextNew/FreightTextBlackSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBlackSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBlackSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBlackSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBlackSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBlackSC.svg#FreightTextBlackSC') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextLight';
+  src: url('../../fonts/FreightTextNew/FreightTextLight.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextLight.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextLight.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextLight.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextLight.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextLight.svg#FreightTextLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextBlackItalicSC';
+  src: url('../../fonts/FreightTextNew/FreightTextBlackItalicSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBlackItalicSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBlackItalicSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBlackItalicSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBlackItalicSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBlackItalicSC.svg#FreightTextBlackItalicSC') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextLightItalic';
+  src: url('../../fonts/FreightTextNew/FreightTextLightItalic.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextLightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextLightItalic.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextLightItalic.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextLightItalic.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextLightItalic.svg#FreightTextLightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextBookItalic';
+  src: url('../../fonts/FreightTextNew/FreightTextBookItalic.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBookItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBookItalic.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBookItalic.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBookItalic.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBookItalic.svg#FreightTextBookItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextBold';
+  src: url('../../fonts/FreightTextNew/FreightTextBold.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBold.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBold.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBold.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBold.svg#FreightTextBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextMediumSC';
+  src: url('../../fonts/FreightTextNew/FreightTextMediumSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextMediumSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextMediumSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextMediumSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextMediumSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextMediumSC.svg#FreightTextMediumSC') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextMediumItalicSC';
+  src: url('../../fonts/FreightTextNew/FreightTextMediumItalicSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextMediumItalicSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextMediumItalicSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextMediumItalicSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextMediumItalicSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextMediumItalicSC.svg#FreightTextMediumItalicSC') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextLightItalicSC';
+  src: url('../../fonts/FreightTextNew/FreightTextLightItalicSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextLightItalicSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextLightItalicSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextLightItalicSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextLightItalicSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextLightItalicSC.svg#FreightTextLightItalicSC') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextBoldSC';
+  src: url('../../fonts/FreightTextNew/FreightTextBoldSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBoldSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBoldSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBoldSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBoldSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBoldSC.svg#FreightTextBoldSC') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextBookSC';
+  src: url('../../fonts/FreightTextNew/FreightTextBookSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBookSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBookSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBookSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBookSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBookSC.svg#FreightTextBookSC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextBookItalicSC';
+  src: url('../../fonts/FreightTextNew/FreightTextBookItalicSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBookItalicSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBookItalicSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBookItalicSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBookItalicSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBookItalicSC.svg#FreightTextBookItalicSC') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextMediumItalic';
+  src: url('../../fonts/FreightTextNew/FreightTextMediumItalic.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextMediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextMediumItalic.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextMediumItalic.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextMediumItalic.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextMediumItalic.svg#FreightTextMediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextMedium';
+  src: url('../../fonts/FreightTextNew/FreightTextMedium.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextMedium.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextMedium.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextMedium.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextMedium.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextMedium.svg#FreightTextMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextBoldItalicSC';
+  src: url('../../fonts/FreightTextNew/FreightTextBoldItalicSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBoldItalicSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBoldItalicSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBoldItalicSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBoldItalicSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBoldItalicSC.svg#FreightTextBoldItalicSC') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextLightSC';
+  src: url('../../fonts/FreightTextNew/FreightTextLightSC.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextLightSC.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextLightSC.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextLightSC.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextLightSC.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextLightSC.svg#FreightTextLightSC') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightTextBoldItalic';
+  src: url('../../fonts/FreightTextNew/FreightTextBoldItalic.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBoldItalic.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBoldItalic.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBoldItalic.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBoldItalic.svg#FreightTextBoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FreightTextBlackItalic';
+  src: url('../../fonts/FreightTextNew/FreightTextBlackItalic.eot');
+  src: url('../../fonts/FreightTextNew/FreightTextBlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/FreightTextNew/FreightTextBlackItalic.woff2') format('woff2'),
+  url('../../fonts/FreightTextNew/FreightTextBlackItalic.woff') format('woff'),
+  url('../../fonts/FreightTextNew/FreightTextBlackItalic.ttf') format('truetype'),
+  url('../../fonts/FreightTextNew/FreightTextBlackItalic.svg#FreightTextBlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Interstate Bold';
+  src: url('../../fonts/Interstate/Interstate-Bold.eot');
+  src: url('../../fonts/Interstate/Interstate-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/Interstate/Interstate-Bold.woff2') format('woff2'),
+  url('../../fonts/Interstate/Interstate-Bold.woff') format('woff'),
+  url('../../fonts/Interstate/Interstate-Bold.ttf') format('truetype'),
+  url('../../fonts/Interstate/Interstate-Bold.svg#Interstate-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Interstate Light';
+  src: url('../../fonts/Interstate/Interstate-Light.eot');
+  src: url('../../fonts/Interstate/Interstate-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/Interstate/Interstate-Light.woff2') format('woff2'),
+  url('../../fonts/Interstate/Interstate-Light.woff') format('woff'),
+  url('../../fonts/Interstate/Interstate-Light.ttf') format('truetype'),
+  url('../../fonts/Interstate/Interstate-Light.svg#Interstate-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+

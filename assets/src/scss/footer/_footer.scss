@@ -1,0 +1,346 @@
+.footer {
+  background-color: $c-brand-l-blue;
+  padding-top: 200px;
+  padding-bottom: 75px;
+  position: relative;
+  overflow: hidden;
+  z-index: 500;
+  @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+    padding: 50px 0;
+  }
+  &__title {
+    font-size: $fs-xl;
+    color: $c-font-green;
+    text-align: left;
+    line-height: 100px;
+    margin-bottom: 100px;
+    @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+      font-size: $fs-lg;
+      line-height: 60px;
+      margin-bottom: 50px;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+      font-size: $fs-mb;
+    }
+  }
+  &__contact {
+    position: relative;
+    z-index: 20;
+    margin-bottom: 190px;
+    @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+      margin-bottom: 50px;
+    }
+  }
+  &__form {
+    form {
+      position: relative;
+      .wpcf7-response-output {
+        position: absolute;
+        width: auto;
+        bottom: -50px;
+        left: 0;
+        margin: 0;
+      }
+    }
+    button {
+      cursor: pointer;
+      max-width: 440px;
+      width: 100%;
+      margin-top: 120px;
+      border-radius: 0;
+      @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+        margin-top: 50px;
+      }
+      @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+        max-width: 100%;
+      }
+    }
+    input.form-control,
+    textarea.form-control {
+      height: 85px;
+      margin-bottom: 25px;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      font-family: $f-interstate-b;
+      font-size: $fs-lg;
+      padding: 0;
+      @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+        font-size: $fs-lg-team;
+      }
+      @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+        font-size: $fs-md;
+        height: 40px;
+        margin-bottom: 5px;
+      }
+      @include placeholder {
+        font-family: $f-interstate-b;
+        font-size: $fs-lg;
+        opacity: 0.2;
+        @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+          font-size: $fs-lg-team;
+        }
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          font-size: $fs-md;
+        }
+      }
+    }
+    textarea.form-control {
+      height: auto;
+    }
+    .wpcf7-not-valid-tip {
+      font-family: $f-interstate-b;
+      opacity: 0.4;
+      //display: none;
+    }
+    input.wpcf7-not-valid,
+    textarea.wpcf7-not-valid {
+      @include placeholder {
+        color: red;
+      }
+    }
+  }
+  &__bottom {
+    position: relative;
+    z-index: 20;
+    .subscribe {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+        flex-direction: column;
+      }
+      &__text {
+        margin-right: 20px;
+        @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+          width: 350px;
+          margin: 0 auto 25px;
+          text-align: left;
+        }
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          width: 100%;
+        }
+        p {
+          font-family: $f-interstate-l;
+          font-size: $fs-md-footer;
+          text-align: center;
+          @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+            text-align: left;
+          }
+        }
+      }
+      .yikes-mailchimp-container {
+        max-width: 800px;
+        width: 100%;
+        p.yikes-easy-mc-hidden {
+          position: absolute;
+          top: -50px;
+          @media screen and(max-width: map_get($grid-breakpoints, 'lg')) {
+            top: 0;
+          }
+        }
+      }
+      &__form {
+        display: flex;
+        max-width: 800px;
+        width: 100%;
+        label {
+          margin: 0 !important;
+        }
+        .EMAIL-label {
+          width: calc(100% - 200px);
+          @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+            width: 100%;
+            margin-bottom: 15px !important;
+          }
+          input {
+            background-color: $c-brand-white !important;
+            font-family: $f-freight-m;
+            font-size: 20px;
+            line-height: 30px;
+            @include placeholder {
+              font-family: $f-freight-m;
+              font-size: 20px;
+              line-height: 30px;
+              opacity: 0.2;
+            }
+            &:-moz-placeholder {
+              line-height: 45px;
+            }
+            &::-moz-placeholder {
+              line-height: 58px;
+            }
+          }
+        }
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          flex-direction: column;
+        }
+      }
+      &__control {
+        height: 78px;
+        padding-left: 30px;
+        margin: 0 !important;
+        border-radius: 0;
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          width: 100%;
+        }
+        @include placeholder {
+          font-family: $f-interstate-l;
+          font-size: $fs-md-footer;
+          opacity: 0.4;
+        }
+      }
+      .cross-btn {
+        width: 200px;
+        padding-left: 0;
+        background-color: $c-brand-green !important;
+        transition: all 0.4s;
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: $c-brand-blue !important;
+          color: $c-font-main !important;
+        }
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          width: 100%;
+        }
+      }
+    }
+    .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+        flex-direction: column;
+      }
+      &__text {
+        display: flex;
+        align-items: center;
+        @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          margin-bottom: 25px;
+          align-items: center;
+        }
+        .logo {
+          width: 130px;
+          height: 24px;
+          margin-right: 75px;
+          @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+            margin-right: 0;
+            margin-bottom: 20px;
+          }
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        p {
+          font-family: $f-interstate-l;
+          font-size: $fs-xs-footer;
+        }
+      }
+      &__social {
+        @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+          margin-right: 20px;
+        }
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          margin-right: 0;
+        }
+        ul {
+          margin: 0;
+          li {
+            float: left;
+            margin-right: 60px;
+            font-family: $f-interstate-l;
+            font-size: $fs-md-footer;
+            color: $c-font-white;
+            @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+              color: $c-font-main;
+              margin-right: 30px;
+            }
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      &__icon {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+      }
+      &__icon_facebook {
+        background-image: url("/wp-content/themes/crosscut/assets/img/icons/facebook.svg");
+        @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+          background-image: url("/wp-content/themes/crosscut/assets/img/icons/facebook-black.svg");
+        }
+      }
+      &__icon_twitter {
+        background-image: url("/wp-content/themes/crosscut/assets/img/icons/twitter.svg");
+        @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+          background-image: url("/wp-content/themes/crosscut/assets/img/icons/twitter-black.svg");
+        }
+      }
+      &__icon_linkedin {
+        background-image: url("/wp-content/themes/crosscut/assets/img/icons/linkedin.svg");
+        @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+          background-image: url("/wp-content/themes/crosscut/assets/img/icons/linkedin-black.svg");
+        }
+      }
+
+      &__desktop {
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          display: none;
+        }
+      }
+      &__mobile {
+        display: none;
+        @media screen and(max-width: map_get($grid-breakpoints, 'sm')) {
+          display: block;
+        }
+        .copyright__social {
+          @include flex(row,space-between);
+          margin-bottom: 45px;
+        }
+        .copyright__text {
+          align-items: self-start;
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  &__triangle {
+    width: 60vw;
+    height: 60vw;
+    position: absolute;
+    bottom: -30vw;
+    right: -30vw;
+    transform: rotate(45deg);
+    background-color: $c-brand-d-blue;
+    z-index: 10;
+    @media screen and(max-width: map_get($grid-breakpoints, 'xl')) {
+      width: 80vw;
+      height: 80vw;
+      bottom: -40vw;
+      right: -40vw;
+    }
+    @media screen and(max-width: map_get($grid-breakpoints, 'md')) {
+      width: 20vw;
+      height: 20vw;
+      bottom: -10vw;
+      right: -10vw;
+    }
+  }
+}
